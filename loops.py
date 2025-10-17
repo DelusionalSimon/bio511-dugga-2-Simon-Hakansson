@@ -74,5 +74,6 @@ if __name__ == "__main__":
 
     print(f"These are the cubes of all negative numbers in the input: \n{negativeCubes(numbers)}")
 
+    print("This is the first occurence of a repeat of an absolute value:")
     absoluteRepeat(numbers)
 
