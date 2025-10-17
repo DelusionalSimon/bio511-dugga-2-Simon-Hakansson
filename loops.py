@@ -19,7 +19,18 @@ def negativeCubes(numbers:list[int]) -> list[int]:
             cubeList.append(number)
     return cubeList
 
-
+def absoluteRepeat(numbers:list[int]) -> None:
+    checked = []
+    numberFound = False
+    for number in numbers:
+        if abs(number) in checked and not numberFound:
+            print(number)
+            numberFound = True
+        else:
+            checked.append(abs(number))
+    # If no repeats found 
+    if not numberFound:
+        print("No repeats")
 
 
 
@@ -27,4 +38,5 @@ def negativeCubes(numbers:list[int]) -> list[int]:
 
 print(f"the sum of numbers with an absolute value over 10 is {absoluteSum(numbers)}")
 print(negativeCubes(numbers))
+absoluteRepeat(numbers)
 
