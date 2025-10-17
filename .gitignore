@@ -1,2 +1,5 @@
+#ignore yml files
 dugga_python_env.yml
 dugga_python_env.yml:Zone.Identifier
+#ignore input csv
+/inputs
