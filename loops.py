@@ -1,6 +1,15 @@
+"""!
+@file       loops.py
+@author     Simon Håkansson
+@date       2025-10-17
+@brief      A Module containing three functions that operate on a list of integers 
+
+@details    This module was created to complete the second Dugga of the BIO511
+            It contains functions that operate on a list on integrers 
+"""
 
 
-# Input data
+# ----------[INPUT]----------
 numbers = [15, -5, -12, 7, 10, -7, 3, -10, 4] 
 
 
