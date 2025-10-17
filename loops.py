@@ -67,8 +67,8 @@ def absoluteRepeat(numbers:list[int]) -> None:
 
 
 # ----------[MAIN]----------
-
-print(f"the sum of numbers with an absolute value over 10 is {absoluteSum(numbers)}")
-print(negativeCubes(numbers))
-absoluteRepeat(numbers)
+if __name__ == "__main__":
+    print(f"the sum of numbers with an absolute value over 10 is {absoluteSum(numbers)}")
+    print(negativeCubes(numbers))
+    absoluteRepeat(numbers)
 
