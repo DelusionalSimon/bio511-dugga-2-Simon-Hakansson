@@ -29,15 +29,16 @@ def absoluteSum(numbers:list[int]) -> int:
 
 def negativeCubes(numbers:list[int]) -> list[int]:
     """!
-    @brief:     Makes a list of of all negative numbers in a list
+    @brief:     Makes a list of of the cube of all negative numbers
 
     @param:     numbers A list of integers to check
-    @return:    A list of negative integers
+    @return:    A list of cubed negative integers
     """
     cubeList = []
     for number in numbers:
         if number < 0:
-            cubeList.append(number)
+            cubedNumber = number ** 3
+            cubeList.append(cubedNumber)
     return cubeList
 
 def absoluteRepeat(numbers:list[int]) -> None:
@@ -68,7 +69,10 @@ def absoluteRepeat(numbers:list[int]) -> None:
 
 # ----------[MAIN]----------
 if __name__ == "__main__":
+
     print(f"the sum of numbers with an absolute value over 10 is {absoluteSum(numbers)}")
-    print(negativeCubes(numbers))
+
+    print(f"These are the cubes of all negative numbers in the input: \n{negativeCubes(numbers)}")
+
     absoluteRepeat(numbers)
 
